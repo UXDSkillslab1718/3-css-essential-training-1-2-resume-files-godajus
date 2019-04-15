@@ -23,6 +23,9 @@ h2 {
 	font-size: 40px;
 	margin-top: 0;
 }
+h3 {
+	margin: 0;
+}
 
  a {
  	color: #F4E04D;
@@ -47,6 +50,9 @@ a:hover {
 	float:left;
 	padding-left:20px;
 	min-height:150px;
+}
+.uppercase {
+	text-transform: uppercase;
 }
 /*Header and Footer
 ----------------------*/
@@ -76,9 +82,22 @@ display: inline-block;
 .work {
 	background:#EDF67D;
 }
+h3 ~ p {
+margin: 0;
+}
+.job-desc {
+	margin-bottom: 25px;
+}
+.job-desc p:first-of-type {
+	margin-top: 0;
+}
+
 
 /*Education
 ----------------------*/
 .education {
 	background:#CA7DF9;
+}
+p + h3 {
+	margin-top: 30px;
 }

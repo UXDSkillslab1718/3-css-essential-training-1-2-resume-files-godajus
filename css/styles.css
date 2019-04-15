@@ -41,17 +41,7 @@ a:hover {
 	padding: 60px 50px;
 	overflow: auto;
 }
-.col-n {
-	width:30%;
-	float: left;
-	min-height:150px;
-}
-.col-w {
-	width:70%;
-	float:left;
-	padding-left:20px;
-	min-height:150px;
-}
+
 .uppercase {
 	text-transform: uppercase;
 }
@@ -140,4 +130,26 @@ margin: 0;
 }
 p + h3 {
 	margin-top: 30px;
+}
+/*Media Queries
+----------------------*/
+@media (min-width: 850px){
+.col-n {
+	width:30%;
+	float: left;
+}
+.col-w {
+	width:70%;
+	float:left;
+	padding-left:20px;
+}
+@media (max-width: 849px)
+{
+	header 
+	{
+		text-align: center;
+	}
+	.image {
+		width: 150px;
+	}
 }

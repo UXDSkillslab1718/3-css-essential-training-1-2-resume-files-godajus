@@ -1,8 +1,15 @@
 /*Global styles
 ----------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
 	font-family: 'Quicksand', sans-serif;
+	margin: 0;
 
 }
 h1,h2 {
@@ -14,7 +21,9 @@ h1{
 }
 h2 {
 	font-size: 40px;
+	margin-top: 0;
 }
+
  a {
  	color: #F4E04D;
  }
@@ -22,14 +31,45 @@ h2 {
 a:hover {
 	text-decoration: none;
 }
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: auto;
+}
+.col-n {
+	width:30%;
+	float: left;
+	min-height:150px;
+}
+.col-w {
+	width:70%;
+	float:left;
+	padding-left:20px;
+	min-height:150px;
+}
 /*Header and Footer
 ----------------------*/
 header, footer {
 	background:#564592;
 	color: #E5FCF5;
 }
+/* header */
+.image {
+	border-radius:50%;	
+}
 header h1, header h2{
     color:#FEFFFE;
+    margin:0;
+}
+/* footer */
+footer {
+	text-align: center;
+}
+.info a {
+background: black;
+padding: 10px;
+display: inline-block;
 }
 /*Work experience{}
 ----------------------*/
